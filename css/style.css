@@ -1,0 +1,17 @@
+.main-header {
+  background-color: #0288d1;
+  padding: 30px 0; }
+
+.bg-faded {
+  background-color: transparent; }
+
+.dropdown-menu {
+  background-color: transparent;
+  border: 0; }
+
+.navbar-collapse {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fdfdfd; }
