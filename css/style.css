@@ -23,6 +23,20 @@ main {
 .main-header {
   background-color: #0288d1; }
 
+.head-fix {
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  opacity: 1;
+  box-shadow: 0 8px 12px 13px rgba(137, 137, 137, 0.6);
+  animation-name: vis;
+  animation-duration: 1s; }
+
+@keyframes vis {
+  from {
+    transform: translateY(-70px);
+    opacity: 0; } }
+
 .bg-faded {
   background-color: transparent; }
 
@@ -135,11 +149,15 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.3); }
   .widget-servise__block {
-    margin: 10px 0 25px; }
+    margin: 10px 0 25px;
+    border: 2px solid #ddd;
+    padding: 10px 5px 15px;
+    border-radius: 10px; }
   .widget-servise__text {
     margin-top: 15px;
     min-height: 50px;
-    font-size: 90%; }
+    font-size: 90%;
+    margin-bottom: 5px; }
   .widget-servise img {
     height: 150px;
     width: 160px;
@@ -149,7 +167,8 @@ main {
   color: #0288d1; }
   .btn--service {
     border-radius: 5px;
-    background-color: #fdfdfd; }
+    background-color: #fdfdfd;
+    white-space: normal; }
 
 .video-ntv {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -189,7 +208,7 @@ main {
   position: relative; }
   .map .map__contact {
     position: absolute;
-    top: 12%;
+    top: 45px;
     right: 8%;
     background-color: rgba(0, 0, 0, 0.6);
     border: 4px solid #0288d1;
@@ -200,6 +219,20 @@ main {
     z-index: 1; }
     .map .map__contact a {
       color: #fdfdfd; }
+    @media (max-width: 991px) {
+
+  .head-fix {
+    position: relative; }
+
+  .dropdown .dropdown-menu {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.3); }
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 100%; }
+
+  .main-footer__phone {
+    text-align: left; } }
     @media (max-width: 768px) {
 
   .navbar-brand {
@@ -228,17 +261,6 @@ main {
     max-width: 540px;
     margin: 0 auto;
     padding: 0 15px; } }
-    @media (max-width: 991px) {
-
-  .dropdown .dropdown-menu {
-    box-shadow: none;
-    background-color: rgba(255, 255, 255, 0.3); }
-
-  .navbar-nav .nav-item .nav-link {
-    font-size: 100%; }
-
-  .main-footer__phone {
-    text-align: left; } }
     @media (max-width: 1200px) {
 
   .navbar-nav .nav-item .nav-link, .navbar-brand__text {
