@@ -429,44 +429,79 @@ h3, h4, h5, h6 {
   font-size: 1.2em; }
 
 .container {
-  width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0 5px; }
+  padding: 0 15px; }
+
+.header-widget {
+  background-image: linear-gradient(#fefcea, #fefcea 40%, #80f286 80%); }
 
 .logo {
   padding: 5px;
   display: inline-block;
-  width: 60%; }
+  width: 60%;
+  margin: 10px 5px 15px;
+  vertical-align: middle; }
 
 .btn--menu {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   background-image: url("/img/HAMBURGER-MENU.svg");
-  vertical-align: bottom;
+  vertical-align: middle;
   text-align: right;
-  margin-left: 55px; }
+  margin-left: 55px;
+  background-color: transparent;
+  border: none; }
 
 .header-contact {
   padding: 10px 5px; }
   .header-contact__time {
     position: relative;
-    padding: 0 20px; }
+    margin-left: 45px; }
   .header-contact__time::before {
     display: block;
     content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: url("/img/phone.svg"); }
+    width: 25px;
+    height: 25px;
+    left: -45px;
+    top: 2px;
+    background: url("/img/clock.svg"); }
+  .header-contact__phone {
+    position: relative;
+    margin-left: 45px;
+    font-size: 1.1em; }
+  .header-contact__phone::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -45px;
+    top: 2px;
+    background: url("/img/phone.svg");
+    transform: rotate(95deg); }
+  .header-contact__adess {
+    position: relative;
+    margin-left: 45px; }
+  .header-contact__adess::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 25px;
+    left: -45px;
+    top: 2px;
+    background: url("/img/address-book.svg"); }
 
 .main-banner {
   background-image: url("/img/bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
-  padding: 30px 15px 40px; }
+  padding: 30px 15px 40px;
+  box-shadow: 0 -3px 9px 2px rgba(0, 0, 0, 0.2); }
 
 .main-menu {
   display: none; }
@@ -476,7 +511,7 @@ h3, h4, h5, h6 {
     padding: 0; }
 
 .widget {
-  background-color: mediumspringgreen; }
+  background-image: linear-gradient(#80f286, #fefcea 100%); }
 
 .widget-pain {
   display: -ms-flexbox;
@@ -503,8 +538,8 @@ h3, h4, h5, h6 {
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.5);
     text-align: center;
     background-color: #fffafa;
-    width: 250px;
-    height: 190px; }
+    height: 200px;
+    width: 250px; }
 
 .feature__title {
   text-align: center; }
@@ -544,7 +579,10 @@ h3, h4, h5, h6 {
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly; }
   .main-menu {
-    display: block; } }
+    display: block; }
+  .widget-pain__items {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%; } }
 
 @media (min-width: 1000px) {
   .container {
