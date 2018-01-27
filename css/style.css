@@ -428,13 +428,16 @@ h2 {
 h3, h4, h5, h6 {
   font-size: 1.2em; }
 
+a {
+  text-decoration: none; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px; }
 
 .header-widget {
-  background-image: linear-gradient(#fefcea, #fefcea 40%, #80f286 80%); }
+  background-image: linear-gradient(#fefcea, #c9ffc9 40%, #80f286 80%); }
 
 .logo {
   padding: 5px;
@@ -502,6 +505,14 @@ h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 30px 15px 40px;
   box-shadow: 0 -3px 9px 2px rgba(0, 0, 0, 0.2); }
+  .main-banner__title {
+    margin: 60px auto 40px;
+    text-align: center;
+    text-transform: uppercase; }
+  .main-banner__text {
+    margin: 40px auto;
+    text-align: center;
+    font-weight: 700; }
 
 .main-menu {
   display: none; }
@@ -510,8 +521,18 @@ h3, h4, h5, h6 {
     list-style: none;
     padding: 0; }
 
+.main-menu--show {
+  position: fixed;
+  top: 0;
+  width: 60%;
+  background: aqua;
+  left: 0;
+  height: 100%;
+  z-index: 40; }
+
 .widget {
-  background-image: linear-gradient(#80f286, #fefcea 100%); }
+  background-image: linear-gradient(#80f286, #fefcea 100%);
+  box-shadow: 0 7px 8px 1px rgba(0, 0, 0, 0.6); }
 
 .widget-pain {
   display: -ms-flexbox;
@@ -519,18 +540,23 @@ h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+  padding: 20px 5px 30px; }
   .widget-pain__title {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase;
+    color: #fffafa; }
   .widget-pain__items {
     text-align: center;
-    transition: 400ms; }
+    transition: 400ms;
+    padding: 10px; }
+    .widget-pain__items h3 {
+      color: #0449ed; }
     .widget-pain__items:hover {
       scale: 1.2;
       transform: translateY(-10px);
-      background-color: #fffafa;
       box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.6);
       transition: 400ms; }
   .widget-pain__items img {
@@ -554,6 +580,28 @@ h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.feature__item {
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #def0f0;
+  border-bottom-radius: 20px; }
+  .feature__item h3 {
+    background-color: #297cac;
+    margin: 0;
+    padding: 10px 12px 22px;
+    color: #fffafa;
+    position: relative; }
+    .feature__item h3::after {
+      content: "";
+      display: block;
+      height: 10px;
+      transform: skewY(-1.5deg);
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      background-color: #297cac; }
 
 .footer {
   background-color: mediumspringgreen; }
