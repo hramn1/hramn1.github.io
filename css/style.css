@@ -417,7 +417,9 @@ template {
 body {
   font-family: "Roboto", "Arial", sans-serif;
   background-color: #eeeeee;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 120%;
+  color: #232323; }
 
 h1 {
   font-size: 1.5em; }
@@ -437,7 +439,7 @@ a {
   padding: 0 15px; }
 
 .header-widget {
-  background-image: linear-gradient(#fefcea, #c9ffc9 40%, #80f286 80%); }
+  background-image: linear-gradient(#006d68, #c9ffc9 80%); }
 
 .logo {
   padding: 5px;
@@ -567,6 +569,10 @@ a {
     height: 200px;
     width: 250px; }
 
+.feature {
+  padding: 15px 10px 20px;
+  margin: 0 0 0; }
+
 .feature__title {
   text-align: center; }
 
@@ -580,12 +586,17 @@ a {
   margin: 0;
   padding: 0;
   list-style: none; }
+  .feature__items p {
+    padding: 10px 15px 20px;
+    margin: 20px 15px 30px; }
 
 .feature__item {
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: #def0f0;
-  border-bottom-radius: 20px; }
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 15px 0; }
   .feature__item h3 {
     background-color: #297cac;
     margin: 0;
@@ -602,6 +613,11 @@ a {
       bottom: -5px;
       width: 100%;
       background-color: #297cac; }
+  .feature__item p {
+    font-size: 16px;
+    padding: 10px 15px;
+    line-height: 120%;
+    text-align: justify; }
 
 .footer {
   background-color: mediumspringgreen; }
