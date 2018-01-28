@@ -439,7 +439,7 @@ a {
   padding: 0 15px; }
 
 .header-widget {
-  background-image: linear-gradient(#006d68, #c9ffc9 80%); }
+  background-image: linear-gradient(rgba(0, 109, 104, 0.2), rgba(0, 109, 104, 0.75) 80%); }
 
 .logo {
   padding: 5px;
@@ -533,7 +533,7 @@ a {
   z-index: 40; }
 
 .widget {
-  background-image: linear-gradient(#80f286, #fefcea 100%);
+  background-image: linear-gradient(rgba(0, 109, 104, 0.65), rgba(0, 109, 104, 0.35) 80%);
   box-shadow: 0 7px 8px 1px rgba(0, 0, 0, 0.6); }
 
 .widget-pain {
@@ -620,7 +620,7 @@ a {
     text-align: justify; }
 
 .footer {
-  background-color: mediumspringgreen; }
+  background-color: #006d68; }
 
 @media (min-width: 500px) {
   .container {
