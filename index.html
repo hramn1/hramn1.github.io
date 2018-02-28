@@ -1,187 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
   <meta name="format-detection" content="telephone=no">
-  <title>Клиника Боли</title>
-  <link href = "css/style.min.css" rel="stylesheet" type="text/css">
-  <script src="js/custom.js" type="text/javascript" defer></script>
-</head>
-<body>
-  <header>
-    <section class="header-widget">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <title>Главтент груп</title>
+ </head>
+ <body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <div class="logo">
-          <a href="/"><img src="img/logo.png" alt="Логотип" width="200" height="125"></a>
-        </div>
-        <button class="btn btn--menu"></button>
-        <section class="header-contact">
-          <div class="header-contact__time">
-            <p>Пн-Сб: 9.00-19.00<br>
-               Вс: Выходной</p>
-          </div>
-          <div class="header-contact__adess">
-            <p> г. Кисловодск,<br> улица Куйбышева, д. 35</p>
-          </div>
-          <div class="header-contact__phone">
-            <p><a href="tel:+79289299910">8-928-929-99-10</a><br>
-            <a href="mailto:pain_clinic@mail.ru">E-mail: pain_clinic@mail.ru</a></p>
-          </div>
-        </section>
-        <nav class="main-menu main-menu__offcanvas">
-        	<span class="close-cross"></span>
-          <ul class="main-menu__items">
-            <li class="active">Главная</li>
-            <li class="main-menu__dropdown">О клинике
-              <ul class="drop-menu">
-                <li>Врачи</li>
-                <li>Пациентам</li>
-                <li>Отзывы</li>
-                <li>Пациентам</li>
-                <li>Пациентам</li>
-                <li>Пациентам</li>
-              </ul>
-            </li>
-            <li><a href="diseace.html">Заболевания</a></li>
-            <li>Методы лечения</li>
-            <li>Услуги и Цены</li>
-            <li>Контакты</li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <div class="main-banner">
-      <div class="container">
-      <h1 class="main-banner__title">DIVINUM OPUS SEDARE DOLOREM</h1>
-      <p class="main-banner__text">(БОЖЕСТВЕННОЕ ДЕЛО- УСПОКАИВАТЬ БОЛЬ)</p>
-      </div>
-    </div>
-  </header>
-  <main class="main-content">
-    <section class="widget">
-      <div class="container">
-        <section class="widget-pain">
-          <h2 class="widget-pain__title">мы лечим</h2>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Боль в Спине</h3>
-                <img src="img/back-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Головная Боль</h3>
-                <img src="img/head-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Боль в шее</h3>
-                <img src="img/neck-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Нейропатическая Боль</h3>
-                <img src="img/neiro-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Боль в суставах</h3>
-                <img src="img/sustavi-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Хроническая Боль</h3>
-                <img src="img/chronic-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Мигрень</h3>
-                <img src="img/migren.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Мышечная Боль</h3>
-                <img src="img/muscle-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-          <div class="widget-pain__items">
-            <div class="widget-pain__item">
-              <a href="">
-                <h3>Другие виды Боли</h3>
-                <img src="img/other-pain.jpg" alt="">
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <article class="feature">
-      <div class="container">
-        <h2 class="feature__title">Наши преимущества</h2>
-        <ul class="feature__items">
-          <li class="feature__item">
-            <h3>КЛИНИКА ЛЕЧЕНИЯ БОЛИ</h3>
-            <p>Единственный в регионе и по многим медицинским критериям уникальный в России специализированный центр лечения боли.</p>
+        <a class="navbar-brand" href="#">Главтент-групп</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
           </li>
-          <li class="feature__item">
-            <h3>ЭФФЕКТИВНОСТЬ И БЕЗОПАСНОСТЬ</h3>
-            <p>Все манипуляции мы проводим только после полноценного обследования и под контролем рентген-, УЗИ- и электронейростимуляционной навигации для обеспечения высокой эффективности и безопасности для пациента.</p>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Каталог</a>
           </li>
-          <li class="feature__item">
-            <h3>МУЛЬТИДИСЦИПЛИНАПНЫЙ ПОДХОД</h3>
-            <p>Комплексный подход: команда врачей, современное оборудование, международные стандарты и методы диагностики и лечения. Обеспечиваем непрерывность ведения пациента: консультация, диагностика, лечение.</p>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
           </li>
-          <li class="feature__item">
-            <h3>ИННОВАЦИОННЫЕ МЕТОДИКИ</h3>
-            <p>Эффективные методы лечения, применяемые ведущими мировыми клиниками.</p>
-          </li>
-          <li class="feature__item">
-            <h3>МГНОВЕННО И НАДОЛГО</h3>
-            <p>Обезболивающий эффект при большинстве процедур проявляется сразу и сохраняется на длительный срок (нередко - навсегда).</p>
-          </li>
-          <li class="feature__item">
-            <h3>ЛЕЧЕНИЕ БОЛИ БЕЗ ОПЕРАЦИЙ</h3>
-            <p>Избавление от боли различной природы без хирургического вмешательства.</p>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Шатры</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Арочные</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </li>
         </ul>
       </div>
-    </article>
-  </main>
-  <footer class="footer">
-    <div class="container">
-    <section class="footer-menu">
-      
-    </section>
-    <section class="copyright">
-      <p>Copyright © 2018 </p>
-      <p>ООО ЛДЦ  &laquo;Клиника лечения боли&raquo; . Лицензия № от выдана </p>
-      <p>Имеются противопоказания, проконсультируйтесь со специалистом. Представленная на сайте информация не является офертой.</p>
-      <p>Цены, указанные на сайте носят ознакомительный характер и требуют уточнения у администратора.</p>
-    </section>
     </div>
-  </footer>
-</body>
-</html>
+  </nav>
+    </header>
+  <section class="tent">
+    <div class="container">
+    <div class="cube-wrap">
+      <div class="cube rotate-x">
+        <div class="face face--back">
+            <h2 class="tent__title">Арочные Шатры</h2>
+            <div class="row">
+              <div class="col-md-3">
+              	<div class="widget-item">
+              		<h3 class="widget-item__title">Арочный шатёр 10x10</h3>
+              		<img src="img/arc-tent-100.jpg" alt="" class="widget-item__image">
+              	</div>
+              </div>
+              <div class="col-md-3">
+              	<div class="widget-item">
+              		<h3 class="widget-item__title">Арочный шатёр 10x10</h3>
+              		<img src="img/arc-tent-100.jpg" alt="" class="widget-item__image">
+              	</div>
+              </div>
+              <div class="col-md-3">
+              	<div class="widget-item">
+              		<h3 class="widget-item__title">Арочный шатёр 10x10</h3>
+              		<img src="img/arc-tent-100.jpg" alt="" class="widget-item__image">
+              	</div>
+              </div>
+              <div class="col-md-3">
+              	<div class="widget-item">
+              		<h3 class="widget-item__title">Арочный шатёр 10x10</h3>
+              		<img src="img/arc-tent-100.jpg" alt="" class="widget-item__image">
+              	</div>
+              </div>
+            </div>
+        </div>
+        <div class="face face--front">
+        
+            <h2 class="tent__title">Мобильные Шатры</h2>
+
+        </div>
+        <div class="face face--down">
+
+            <h2 class="tent__title">Шатры Пагода</h2>
+
+        </div>
+        <div class="face face--up">
+
+            <h2 class="tent__title">Сферические Шатры</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+ </body>
+ </html> 
