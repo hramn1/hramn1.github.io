@@ -2,6 +2,7 @@
   text-align: center;
   margin: 20px auto;
   padding: 40px 0 60px;
+  max-width: 1200px;
 }
 .scale {
   position: relative;
