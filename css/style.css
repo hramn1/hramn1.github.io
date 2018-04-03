@@ -17,12 +17,19 @@ body {
   line-height: 140%;
   color: #323232; }
 
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
 .main-header {
   padding: 0 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
-  height: 90vh; }
+  height: 90vh;
+  min-height: 600px; }
   .main-header__video {
     width: 100%;
     position: absolute;
@@ -35,7 +42,7 @@ body {
     padding: 70px 30px 10px;
     z-index: 3;
     position: relative;
-    margin: 20px auto;
+    margin: 70px auto 20px;
     color: #fdfdfd; }
   .main-header__text {
     max-width: 700px;
@@ -43,7 +50,8 @@ body {
     z-index: 3;
     position: relative;
     margin: 20px auto;
-    color: #fdfdfd; }
+    color: #fdfdfd;
+    font-size: 18px; }
   .main-header::after {
     content: "";
     position: absolute;
@@ -58,6 +66,35 @@ body {
 .navbar {
   position: relative;
   z-index: 3; }
+
+.navbar-contact {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 20px;
+  padding: 10px 25px; }
+
+.navbar-contact__phone {
+  color: #fdfdfd;
+  position: relative;
+  padding: 6px 5px;
+  font-size: 16px; }
+  .navbar-contact__phone::before {
+    content: "";
+    display: block;
+    height: 25px;
+    position: absolute;
+    background: url(/img/phone.svg);
+    transform: rotate(95deg);
+    width: 25px; }
+
+.navbar-nav {
+  margin-left: 20px; }
+
+.nav-item {
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .cube-wrap {
   perspective: 5000px;
@@ -133,16 +170,46 @@ body {
   padding-bottom: 70px;
   margin-top: 10px; }
 
+.fences {
+  background-color: #fdfdfd;
+  padding: 40px 0 60px; }
+  .fences-title {
+    text-align: center;
+    margin: 30px auto; }
+
+.textile {
+  background-color: #fdfdfd;
+  padding: 40px 0 60px; }
+  .textile-title {
+    text-align: center;
+    margin: 30px auto; }
+
 .widget-item {
   margin-top: 10px;
-  border: 1px solid #fdfdfd;
+  border: 1px solid #eeeeee;
   padding: 5px;
   border-radius: 10px;
   padding-bottom: 50px;
-  background-color: #ebebeb; }
+  text-align: center; }
   .widget-item__image {
     max-width: 100%;
     width: 210px; }
   .widget-item__title {
     margin-bottom: 10px;
     margin-top: 15px; }
+
+.main-footer {
+  min-height: 400px;
+  background-color: #323232; }
+
+.furniture {
+  padding: 40px 0 60px; }
+  .furniture-title {
+    text-align: center;
+    margin: 30px auto; }
+
+.podium {
+  padding: 40px 0 60px; }
+  .podium-title {
+    text-align: center;
+    margin: 30px auto; }
