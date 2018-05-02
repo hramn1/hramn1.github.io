@@ -449,7 +449,8 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 1190px; }
 
 .darya {
   padding: 20px 0 30px;
@@ -457,9 +458,15 @@ a {
   font-size: 18px; }
   .darya-block {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
   .darya blockquote {
-    padding: 30px 0 20px 100px;
+    padding: 15px 0 20px 100px;
+    text-align: justify;
+    margin: 50px 30px 30px;
     color: RGB(125, 136, 148);
     background-image: url(/img/coma.png);
     background-repeat: no-repeat;
@@ -467,7 +474,11 @@ a {
     background-size: 70px auto; }
 
 .darya .col-1 {
-  padding: 40px 5px 20px; }
+  padding: 40px 5px 20px;
+  width: 57%; }
+
+.darya .col-2 {
+  width: 37%; }
 
 .darya-welcome {
   margin-top: 80px; }
@@ -510,12 +521,18 @@ a {
   display: flex;
   z-index: 5;
   position: relative;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .fence {
   text-align: center;
   color: #fffafa; }
+  .fence__stat {
+    font-size: 24px; }
+  .fence__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); }
   .fence::before {
     font-family: "fontello";
     font-style: normal;
@@ -530,6 +547,9 @@ a {
     line-height: 1em;
     margin-left: .2em;
     text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); }
+
+.fence:last-child .fence__text {
+  font-size: 85%; }
 
 .student-ico::before {
   content: '\e80c'; }
@@ -547,7 +567,7 @@ a {
   content: '\e81d'; }
 
 .main-header {
-  height: 100vh; }
+  min-height: 100vh; }
   .main-header__title {
     z-index: 1;
     position: relative;
@@ -563,7 +583,14 @@ a {
     color: #fffafa;
     text-align: center;
     font-size: 20px;
-    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.4); }
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+    font-size: 25px; }
+  .main-header__print::after {
+    content: "_";
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    opacity: 1;
+    animation: 800ms ease 0s normal none infinite running caret; }
 
 .head-top {
   display: -ms-flexbox;
@@ -636,20 +663,27 @@ a {
   .btn--start {
     z-index: 2;
     position: relative;
-    width: 200px;
+    width: 20%;
     margin-bottom: 10%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    padding: 10px 20px;
-    color: #fffafa;
+    padding: 14px 20px;
+    font-size: 20px;
+    color: snow;
     border: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer; }
     .btn--start:hover {
       background: #02679e; }
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
 
 .graduates {
   padding: 50px 0 45px;
@@ -683,7 +717,7 @@ a {
   border-bottom: 2px solid #eeeeee; }
 
 .reviews {
-  padding: 30px 5px 50px;
+  padding: 50px 5px 50px;
   background-color: #fff; }
 
 .slide {
@@ -698,7 +732,12 @@ a {
     background-color: #f8f2e2;
     padding: 40px;
     margin: 0 0 0 -10px;
-    position: relative; }
+    position: relative;
+    font-style: italic;
+    color: #636363; }
+    .review-info__desc span {
+      display: block;
+      margin-bottom: 1em; }
   .review-info__title {
     font-size: 30px;
     padding: 0 0 10px 40px;
@@ -707,15 +746,15 @@ a {
     font-weight: 900; }
   .review-info__adress {
     font-style: italic;
-    padding: 0 0 30px 40px; }
+    padding: 0 0 0 40px; }
 
 .offer {
-  padding: 50px 0 30px;
+  padding: 70px 0 100px;
   text-align: center; }
   .offer__title {
     text-transform: uppercase;
     font-size: 30px;
-    margin: 20px 0 50px; }
+    margin: 20px 0 70px; }
 
 .btn--offer {
   position: relative;
@@ -805,20 +844,6 @@ a {
   cursor: pointer; }
   .btn--tarif:hover {
     background: #02679e; }
-  @media (min-width: 500px) {
-  .container {
-    width: 450px; } }
-  @media (min-width: 600px) {
-  .container {
-    width: 555px; } }
-  @media (min-width: 750px) {
-  .container {
-    width: 710px; } }
   @media (min-width: 1000px) {
   body {
-    font-size: 16px; }
-  .container {
-    width: 950px; } }
-  @media (min-width: 1200px) {
-  .container {
-    width: 1150px; } }
+    font-size: 16px; } }
