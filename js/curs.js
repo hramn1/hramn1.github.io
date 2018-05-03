@@ -1,4 +1,6 @@
-
+let videoStudent = document.querySelector('.graduates-inner__video video')
+videoStudent.volume = 0.02;
+videoStudent.setAttribute('autoplay','autoplay');
 
 let stringArray = [
 'создать проект дома своей мечты?',
@@ -58,3 +60,21 @@ function runTheTicker(){
 
 
 startTicker();
+
+setInterval(slideVideo,7000);
+
+let slideReviews = document.querySelectorAll('.video-slide');
+let currentWidthSlide = 0;
+function slideVideo() {
+	if(currentWidthSlide <= -900){
+		currentWidthSlide = -100
+	}
+	currentWidthSlide -= 100;
+	for (var i = 0; i < slideReviews.length; i++) {
+		slideReviews[i].style.transform = 'translateX(' + currentWidthSlide + '%)';
+		slideReviews[i].style.transition = '2000ms';
+	}
+
+
+}
+

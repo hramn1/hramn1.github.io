@@ -449,8 +449,7 @@ a {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  box-sizing: border-box;
-  width: 1190px; }
+  box-sizing: border-box; }
 
 .darya {
   padding: 20px 0 30px;
@@ -662,6 +661,7 @@ a {
   background: #0288d1; }
   .btn--start {
     z-index: 2;
+    display: inline-block;
     position: relative;
     width: 20%;
     margin-bottom: 10%;
@@ -674,10 +674,12 @@ a {
     border: 0;
     border-radius: 30px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     cursor: pointer; }
     .btn--start:hover {
-      background: #02679e; }
+      background: #02679e;
+      opacity: 1; }
 
 @keyframes caret {
   0%, 100% {
@@ -701,9 +703,7 @@ a {
     .graduates-inner__video video {
       background-color: #000; }
   .graduates-inner__text {
-    width: 50%;
-    -ms-flex-positive: 1;
-        flex-grow: 1; }
+    width: 60%; }
 
 .graduates-inner__text h3 span {
   font-size: 25px;
@@ -716,6 +716,22 @@ a {
   padding-bottom: 40px;
   border-bottom: 2px solid #eeeeee; }
 
+.disain {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .disain__img {
+    width: 220px;
+    margin: 10px;
+    transition: 400ms; }
+    .disain__img:hover {
+      transform: scale(2.5);
+      transition: 400ms; }
+
 .reviews {
   padding: 50px 5px 50px;
   background-color: #fff; }
@@ -725,6 +741,16 @@ a {
   display: flex; }
   .slide__video {
     width: 50%; }
+
+.slider-video {
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: flex; }
+
+.video-slide {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
 
 .review-info {
   width: 50%; }
@@ -778,12 +804,16 @@ a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center; }
 
 .tarif-item {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   background-color: #fbfbfb;
   text-align: center;
+  margin-bottom: 20px;
   width: 250px;
   transition: transform 400ms ease-in; }
   .tarif-item:hover {
@@ -811,6 +841,13 @@ a {
     padding: 10px;
     margin-bottom: 5px;
     border-bottom: 1px solid #eeeeee; }
+    .tarif-item__price-main span {
+      font-size: 16px;
+      text-transform: lowercase;
+      font-weight: 400;
+      color: #636363;
+      display: block;
+      margin-top: 7px; }
   .tarif-item__price-sub {
     padding: 10px;
     margin-bottom: 5px;
@@ -844,6 +881,29 @@ a {
   cursor: pointer; }
   .btn--tarif:hover {
     background: #02679e; }
-  @media (min-width: 1000px) {
+
+.tarifi .social {
+  width: 25px;
+  margin-left: 0; }
+
+@media (min-width: 500px) {
+  .container {
+    width: 450px; } }
+
+@media (min-width: 600px) {
+  .container {
+    width: 555px; } }
+
+@media (min-width: 750px) {
+  .container {
+    width: 710px; } }
+
+@media (min-width: 1000px) {
   body {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .container {
+    width: 950px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; } }
