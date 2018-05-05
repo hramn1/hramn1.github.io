@@ -728,10 +728,10 @@ a {
   .disain__img {
     width: 200px;
     margin: 10px;
-    transition: 400ms; }
+    transition: 600ms; }
     .disain__img:hover {
-      transform: scale(2.5);
-      transition: 400ms; }
+      transform: scale(1.5);
+      transition: 600ms; }
 
 .reviews {
   padding: 50px 5px 50px;
