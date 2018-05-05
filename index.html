@@ -1,303 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+ <html lang="en">
+ <head>
   <meta charset="UTF-8">
-  <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
   <meta name="format-detection" content="telephone=no">
-<link href = "css/style.min.css" rel="stylesheet" type="text/css">
-<script src="js/curs.js" defer></script>
-</head>
-<body>
-  <header class="main-header slider">
-    <div class="header-slide header-slide--1 showing"></div>
-    <div class="header-slide header-slide--2"></div>
-    <div class="header-slide header-slide--3"></div>
-    <div class="header-slide header-slide--4"></div>
-    <div class="header-slide header-slide--5"></div>
-    <div class="header-slide header-slide--6"></div>
-    <div class="header-slide header-slide--7"></div>
-    <div class="header-slide header-slide--8"></div>
-    <div class="container welcome-head">
-      <section class="head-top">
-        <a href="#" class="head-top__logo">
-          <img src="img/logo.png" alt="логотип">
-        </a>
-        <div class="head-top__text">
-          <h3>Сам себе дизайнер</h3>
-          <p>создай проект собственного дома</p>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <title>Главтент груп</title>
+ </head>
+ <body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Glavtent-Group</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Шатры</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Арочные</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Прайс-лист</a>
+            </li>
+          </ul>
         </div>
-        <nav class="head-top__menu">
-          <a href="">О студии</a>
-          <a href="">Тарифы</a>
-          <a href="">Отзывы</a>
-          <a href="">Задать вопрос</a>
-        </nav>
-      </section>
-      <h1 class="main-header__title">МЫ ПОМОЖЕМ ВАМ СОЗДАТЬ<br> ПРОЕКТ СОБСТВЕННОГО ДОМА Мечты</h1>
-      <div class="main-header__string">Вы готовы <span class="main-header__print"></span></div>
-      <a class="btn btn--start" href="#tarifiId">Стартовать!</a>
-    </div>
+        <div class="navbar-contact d-none d-lg-flex">
+          <a href="#" class="navbar-contact__phone">899999999</a>
+          <a href="#" class="navbar-contact__phone">899999999</a>
+          <a href="#" class="navbar-contact__email">GG@mail.ru</a>
+        </div>
+      </div>
+    </nav>
+    <video class="main-header__video" loop autoplay>
+      <source src="video/Wedding-Tents.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+    <h1 class="main-header__title"> Производство продажа и аренда шатров </h1>
+    <p class="main-header__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
   </header>
-  <main>
-    <section class="graduates">
-      <div class="container graduates-inner">
-        <div class="graduates-inner__text">
-          <h3><span>Школа дизайна интерьеров Пиковой Дарьи</span><br>Лидер в области онлайн обучения дизайну интерьеров</h3>
-          <p>Основана 15 марта 2015 года и сегодня эта международная компания, которая обучает русскоязычных людей из 25 стран мира</p>
-          <p>Наши студенты получают реальный дизайнер -проект будушего дома своей мечты</p>
-          <div class="disain">
-          	<img class="disain__img" src="img/disain-proekt-1.JPG" alt="">
-          	<img class="disain__img" src="img/disain-proekt-2.JPG" alt="">
-          	<img class="disain__img" src="img/disain-proekt-3.JPG" alt="">
-          	<img class="disain__img" src="img/disain-proekt-4.JPG" alt="">
-          	<img class="disain__img" src="img/disain-proekt-5.JPG" alt="">
+  <section class="tent">
+    <h2 class="tent-title">Аренда и продажа шатров</h2>
+    <div class="cube-wrap">
+      <div class="cube rotate-x">
+        <div class="face face--back">
+            <h2 class="tent__title">Арочные Шатры</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="widget-item">
+                  <h3 class="widget-item__title">Арочный шатёр 8x8</h3>
+                  <img src="img/Arc-8-8.png" alt="" class="widget-item__image">
+                  <div class="widget-overlay">
+                    <a href="#" class="btn btn-overlay">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="widget-item">
+                  <h3 class="widget-item__title">Арочный шатёр 10x10</h3>
+                  <img src="img/arc-10-10.png" alt="" class="widget-item__image">
+                  <div class="widget-overlay">
+                    <a href="#" class="btn btn-overlay">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="widget-item">
+                  <h3 class="widget-item__title">Шатёр Гексагональ 263 кв.м</h3>
+                  <img src="img/263-hexa.png" alt="" class="widget-item__image">
+                  <div class="widget-overlay">
+                    <a href="#" class="btn btn-overlay">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="widget-item">
+                  <h3 class="widget-item__title">Шатёр Октагональ 460 кв.м</h3>
+                  <img src="img/octa-460.png" alt="" class="widget-item__image">
+                  <div class="widget-overlay">
+                    <a href="#" class="btn btn-overlay">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="face face--front">
+          <h2 class="tent__title ">Мобильные Шатры</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Мобильный шатёр 4x4</h3>
+                <img src="img/mobiltent4x4.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Мобильный шатёр 6x4</h3>
+                <img src="img/mobil-shater-6x4.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Мобильный шатёр 8x4</h3>
+                <img src="img/mobil-shater-32.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                 <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="graduates-inner__video">
-          <video  height="350" controls loop>
-              <source src="video/video-grad.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-          </video>
+        <div class="face face--down">
+          <h2 class="tent__title">Шатры Пагода</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Шатёр пагода 3x3</h3>
+                <img src="img/pagoda-3-3.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Шатёр пагода 5x5</h3>
+                <img src="img/pagoda-5-5.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Шатёр пагода 64 кв.м</h3>
+                <img src="img/pagoda-64.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="face face--up">
+          <h2 class="tent__title ">Сферические Шатры</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Сферический шатёр D10</h3>
+                <img src="img/sfera-d10.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Сферический шатёр D14</h3>
+                <img src="img/sfera-d14.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-item">
+                <h3 class="widget-item__title">Сферический шатёр D20</h3>
+                <img src="img/sfera-d20.png" alt="" class="widget-item__image">
+                <div class="widget-overlay">
+                  <a href="#" class="btn btn-overlay">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="darya">
+    </div>
+  </section>
+  <section class="fences">
+    <div class="container">
+      <h2 class="fences-title">Аренда и продажа мобильных ограждений</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Фан барьеры</h3>
+            <img src="img/fan_bareri.jpg" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Оградительные столбики</h3>
+            <img src="img/ograditelnie-stolbiki-lenta.jpg" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Мобильные заборы</h3>
+            <img src="img/mobil-zabori.jpg" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="furniture">
+    <div class="container">
+      <h2 class="furniture-title">Аренда мебели</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Аренда стульев</h3>
+            <img src="img/arenda-stulev.png" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Аренда столов</h3>
+            <img src="img/arenda-stolov.png" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Аренда мягкой мебели</h3>
+            <img src="img/arenda-myagkoy-mebeli.png" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="textile">
+    <div class="container">
+      <h2 class="textile-title text-dark">Аренда банкетного текстиля</h2>
+       <p class="text-dark">Скатерти, чехлы и другой текстиль для банкета Когда вы уже знаете количество гостей и выбрали место проведения торжества, наступило время заказывать аренду мебели и текстиля, чтобы решить вопрос с рассадкой гостей и оформлением зала. Согласитесь, важно подобрать красивые сочетания цветов, умело расставить акценты.
+       </p>
+      <a href="#" class="btn btn-info btn--textile">Подробнее</a>
+    </div>
+  </section>
+  <section class="podium">
+    <div class="container">
+      <h2 class="podium-title">Аренда сцен и подиумов</h2>
+      <div class="row justify-content-around">
+        <div class="col-md-5">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Аренда Сцен</h3>
+            <img src="img/arenda-scen.png" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="widget-item">
+            <h3 class="widget-item__title">Аренда Подиумов</h3>
+            <img src="img/arenda-podiuma.png" alt="" class="widget-item__image">
+            <div class="widget-overlay">
+              <a href="#" class="btn btn-overlay">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class = "about ">
+    <div class="container">
+      <h2 class= "about__title">О нас</h2>
+      <p class = "about__text">Не следует, однако, забывать о том, что сложившаяся структура организации напрямую зависит от дальнейших направлений развитая системы массового участия. Не следует, однако, забывать о том, что повышение уровня гражданского сознания напрямую зависит от существующих финансовых и административных условий? С другой стороны социально-экономическое развитие способствует подготовке и реализации экономической целесообразности принимаемых решений?
+      </p>
+      <p class = "about__text">С другой стороны консультация с профессионалами из IT напрямую зависит от позиций, занимаемых участниками в отношении поставленных задач!</p>
+      <p class = "about__text"> Значимость этих проблем настолько очевидна, что постоянное информационно-техническое обеспечение нашей деятельности требует от нас системного анализа форм воздействия. Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки дальнейших направлений развитая системы массового участия. Повседневная практика показывает, что сложившаяся структура организации представляет собой интересный эксперимент проверки всесторонне сбалансированных нововведений.
+      </p>
+      <p class = "about__text">Равным образом рамки и место обучения кадров требует от нас системного анализа новых предложений. Дорогие друзья, сложившаяся структура организации позволяет выполнить важнейшие задания по разработке модели развития. Равным образом новая модель организационной деятельности требует определения и уточнения системы обучения кадров, соответствующей насущным потребностям. Дорогие друзья, консультация с профессионалами из IT обеспечивает актуальность экономической целесообразности принимаемых решений. Значимость этих проблем настолько очевидна, что социально-экономическое развитие требует определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика...
+      </p>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h3 class="features__title">Наши преимущества</h3>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="features-item">
+            <h3 class="features-item__title">Широкий Ассортимент</h3>
+            <p class="features-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="features-item">
+            <h3 class="features-item__title">Широкий Ассортимент</h3>
+            <p class="features-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="features-item">
+            <h3 class="features-item__title">Широкий Ассортимент</h3>
+            <p class="features-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="features-item">
+            <h3 class="features-item__title">Широкий Ассортимент</h3>
+            <p class="features-item__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__inner">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-7">
+            <nav class="menu-footer">
+              <ul>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+                <li><a class="menu-footer__link" href="#">Ссылка1</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-5">
+            <div class="footer-contact">
+              <p class="footer-contact__phone">Телефон: +7 495 642-56-97 </p>
+              <p class="footer-contact__adress">Адрес: г.Москва, улица Молодцова д.6 </p>
+              <p class="footer-contact__time">Время работы: Ежедневно с 9:00 до 19:00 </p>
+              <p class="footer-contact__mail"> E-mail: event-moscow@mail.ru</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyrigth">
       <div class="container">
-        <div class="darya-block">
-          <div class="col-1">
-            <p class="darya-welcome">Давайте знакомиться!</p>
-            <p class="darya-name">Меня зовут Дарья Пикова!</p>
-            <p class = "darya-text">Я - руководитель студии дизайна и онлайн школы по обучению<br> дизайну интерьеров</p>
-            <blockquote> Чтобы стать профессионалом своего дела, я долго училась и оттачивала свои навыки: художественная школа, высшее архитектурное образование, затем профессиональная деятельность, работа в итальянской архитектурной студии, специализированные курсы дизайна, посещение международных выставок.</blockquote>
-            <p class="darya-present">8 лет работы дизайнером <a href="http://pikova.com/" target="_blank">pikova.com</a><br>
-            4 года преподавательской деятельности <a href="https://www.facebook.com/pikovadesign/" target="_blank"><img class="social fb" src="img/facebook-square.svg" alt="" target="_blank"></a>
-            <a href="https://www.instagram.com/pikova_design/?hl=ru" target="_blank"><img class ="social inst" src="img/instagram.svg" alt=""></a>
-            </p>
-          </div>
-          <div class="col-2">
-            <img src="img/dasha.png" alt="Пикова Дарья">
-          </div>
-        </div>
+        <p>© 2007—2018, ООО «Главтент-Групп»</p>
       </div>
-    </section>
-    <section class="reviews">
-      <div class="container">
-        <div class="slider-video">
-        	<div class="video-slide slide--1">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-        	<div class="video-slide slide--2">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">fdfd Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--3">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--4">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--5">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--6">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--7">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--8">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--9">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-                  	<div class="video-slide slide--10">
-	          <div class="slide">
-	            <div class= "slide__video"><iframe style="width: 100%; height: 100%; margin-top: -55px" src="https://player.vimeo.com/video/262162482?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-	            <div class="review-info">
-	              <h3 class="review-info__title">Власова Екатерина</h3>
-	              <p class="review-info__adress">г. Москва </p>
-	              <p class="review-info__desc"><span>Я хочу поблагодарить весь большой коллектив, который приложил руку к созданию такого чудесного курса!</span><span>
-								Все продумано до мелочей : на курсе не было нерешаемых задач , всё разжёвано до мелочей. Радовало и то, что всегда была обратная связь с преподавателем.</span><span>
-								И как же приятно в результате держать в руках созданный тобой проект - это просто невероятное ощущение ! Никогда бы не подумала, что смогу это сделать)</span>
-								Спасибо огромное Всей команде! Огромных творческий успехов ! Это были прекрасные два месяца !  </p>
-	            </div>
-	          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="fences">
-      <div class="container">
-        <div class="fence-block">
-          <div class="fence student-ico">
-            <p class="fence__stat">600</p>
-            <p class="fence__text">Студентов прошли<br> обучение</p>
-          </div>
-          <div class="fence youtube-ico">
-            <p class="fence__stat">100</p>
-            <p class="fence__text">Видеоотзывов</p>
-          </div>
-          <div class="fence cup-ico">
-            <p class="fence__stat">4</p>
-            <p class="fence__text">Года на рынке</p>
-          </div>
-          <div class="fence team-ico">
-            <p class="fence__stat">20 человек</p>
-            <p class="fence__text">Наша команда</p>
-          </div>
-          <div class="fence money-ico">
-            <p class="fence__stat">108 000 000</p>
-            <p class="fence__text">Студенты сэкономили на услугах<br> профессионального дизайнера</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="offer">
-      <div class="container">
-        <h3 class="offer__title">Вы готовы создать проект дома мечты?</h3>
-        <a class="btn btn--offer " href="#tarifiId">Стартовать</a>
-      </div>
-    </section>
-    <section id="tarifiId" class="tarifi">
-      <div class="container">
-        <div class="tarif">
-          <div class="tarif-item">
-            <h3 class="tarif-item__title">Под присмотром</h3>
-            <p class="tarif-item__price-main">19 990 ₽ <span>(до 29 мая)</span></p>
-            <p class="tarif-item__price-sub"> 22 990 ₽</p>
-            <ul class="tarif-item__text">
-              <li>Остались вопросы?</li>
-              <li><a href="tg://resolve?domain=NatalyaPertseva" target="_blank"><img class ="social tele" src="img/telegram-plane.svg" alt=""></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=79625187748" target="_blank"><img class ="social whats" src="img/whatsapp.svg" alt=""></a></li>
-            </ul>
-            <button class="btn btn--tarif">Оплатить</button>
-          </div>
-          <div class="tarif-item">
-            <h3 class="tarif-item__title">Под присмотром +</h3>
-            <p class="tarif-item__price-main" >29 990 ₽ <span>(до 29 мая)</span></p>
-            <p class="tarif-item__price-sub"> 32 990 ₽</p>
-            <ul class="tarif-item__text">
- <li>Остались вопросы?</li>
-              <li><a href="tg://resolve?domain=NatalyaPertseva" target="_blank"><img class ="social tele" src="img/telegram-plane.svg" alt=""></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=79625187748" target="_blank"><img class ="social whats" src="img/whatsapp.svg" alt=""></a></li>
-            </ul>
-            <button class="btn btn--tarif">Оплатить</button>
-          </div>
-          <div class="tarif-item">
-            <h3 class="tarif-item__title">На связи </h3>
-            <p class="tarif-item__price-main" >39 990 ₽ <span>(до 29 мая)</span></p>
-            <p class="tarif-item__price-sub"> 42 990 ₽</p>
-            <ul class="tarif-item__text">
- <li>Остались вопросы?</li>
-              <li><a href="tg://resolve?domain=NatalyaPertseva" target="_blank"><img class ="social tele" src="img/telegram-plane.svg" alt=""></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=79625187748" target="_blank"><img class ="social whats" src="img/whatsapp.svg" alt=""></a></li>
-            </ul>
-            <button class="btn btn--tarif">Оплатить</button>
-          </div>
-          <div class="tarif-item">
-            <h3 class="tarif-item__title">Авторский надзор </h3>
-            <p class="tarif-item__price-main">79 990 ₽ <span>(до 29 мая)</span></p>
-            <p class="tarif-item__price-sub"> 89 990 ₽</p>
-            <ul class="tarif-item__text">
- <li>Остались вопросы?</li>
-              <li><a href="tg://resolve?domain=NatalyaPertseva" target="_blank"><img class ="social tele" src="img/telegram-plane.svg" alt=""></a></li>
-              <li><a href="https://api.whatsapp.com/send?phone=79625187748" target="_blank"><img class ="social whats" src="img/whatsapp.svg" alt=""></a></li>
-            </ul>
-            <button class="btn btn--tarif">Оплатить</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+    </div>
+  </footer>
+ </body>
+</html> 
