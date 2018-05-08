@@ -420,7 +420,7 @@ template {
   font-weight: normal;
   src: url(../fonts/fontello.woff2) format("woff2"); }
 
-img {
+img, video {
   max-width: 100%; }
 
 a:hover {
@@ -494,6 +494,9 @@ a {
 .darya-name {
   font-size: 40px;
   font-weight: 900; }
+
+.darya-mob {
+  display: none; }
 
 .darya-present {
   font-size: 20px;
@@ -579,11 +582,11 @@ a {
     line-height: 1.2em; }
   .main-header__string {
     z-index: 1;
-    color: #fffafa;
+    color: #0288d1;
     text-align: center;
-    font-size: 20px;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-    font-size: 25px; }
+    text-shadow: 1px 1px 0 #171717;
+    font-size: 25px;
+    font-weight: 600; }
   .main-header__print::after {
     content: "_";
     font-family: Arial, sans-serif;
@@ -699,11 +702,13 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .graduates-inner__video {
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 43%; }
     .graduates-inner__video video {
       background-color: #000; }
   .graduates-inner__text {
-    width: 60%;
+    width: 54%;
     overflow: hidden; }
 
 .graduates-inner__text h3 span {
@@ -726,7 +731,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .disain__img {
-    width: 200px;
+    width: 190px;
     margin: 10px;
     transition: 600ms; }
     .disain__img:hover {
@@ -818,6 +823,14 @@ a {
 .tarifi {
   background-color: #fff;
   padding: 30px 5px 55px; }
+  .tarifi__title {
+    text-align: center;
+    margin: 20px auto 25px;
+    text-transform: uppercase; }
+  .tarifi-text {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic; }
 
 .tarif {
   display: -ms-flexbox;
@@ -906,7 +919,7 @@ a {
 
 .tarifi .social {
   width: 25px;
-  margin-left: 0; }
+  margin-left: 10px; }
 
 @media (min-width: 500px) {
   .container {
@@ -970,7 +983,8 @@ a {
   .graduates-inner__text {
     width: 100%; }
   .graduates-inner__video {
-    margin: 10px auto; }
+    margin: 10px auto;
+    width: 100%; }
   .offer__title {
     font-size: 22px;
     line-height: 120%; }
@@ -979,9 +993,45 @@ a {
     justify-content: center; } }
 
 @media (max-width: 500px) {
+  .darya .col-2 {
+    display: none; }
+  .darya-mob {
+    display: block;
+    margin: 0 auto; }
+  .darya blockquote {
+    padding: 10px 6px;
+    margin: 0;
+    text-align: left;
+    font-size: 16px; }
+  .fences {
+    padding: 15px 5px 10px; }
   .fence {
     -ms-flex-preferred-size: 90%;
-    flex-basis: 90%; }
+    flex-basis: 90%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .fence::before {
+    font-size: 40px; }
+  .fence__stat {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 0 5px;
+    font-size: 14px; }
+  .fence__text {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    margin: 0 5px;
+    font-size: 11px; }
+  .fence:last-child .fence__text {
+    font-size: 7px; }
+  .stat--last {
+    font-size: 13px; }
   .head-top__menu {
     -ms-flex-order: 2;
     order: 2;
@@ -1010,7 +1060,10 @@ a {
     display: block;
     padding: 0; }
   .graduates-inner__text h3 {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .disain__img {
+    width: 90px;
+    height: auto; } }
 
 @media (max-width: 750px) {
   .slide {
