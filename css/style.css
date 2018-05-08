@@ -1063,7 +1063,7 @@ a {
     font-size: 16px; }
   .disain__img {
     width: 90px;
-    height: auto; } }
+    height: 100%; } }
 
 @media (max-width: 750px) {
   .slide {
