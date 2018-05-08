@@ -708,8 +708,7 @@ a {
     .graduates-inner__video video {
       background-color: #000; }
   .graduates-inner__text {
-    width: 54%;
-    overflow: hidden; }
+    width: 54%; }
 
 .graduates-inner__text h3 span {
   font-size: 25px;
@@ -735,7 +734,7 @@ a {
     margin: 10px;
     transition: 600ms; }
     .disain__img:hover {
-      transform: scale(1.5);
+      transform: scale(2);
       transition: 600ms; }
 
 .reviews {
@@ -746,7 +745,8 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .slide__video {
-    width: 50%; }
+    width: 50%;
+    min-height: 350px; }
 
 .slider-video {
   overflow: hidden;
@@ -866,7 +866,8 @@ a {
     background-repeat: repeat-x; }
   .tarif-item__text {
     padding: 20px 5px 15px 30px;
-    font-size: 15px;
+    font-size: 14px;
+    text-align: left;
     font-style: italic; }
   .tarif-item__price-main {
     font-size: 20px;
@@ -1054,6 +1055,8 @@ a {
   .head-top__text {
     width: 60%;
     margin-left: 5px; }
+  .graduates-inner__text {
+    overflow: hidden; }
   .graduates-inner__text h3 span {
     font-size: 18px;
     margin: 10px 0;
