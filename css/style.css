@@ -403,22 +403,22 @@ template {
   display: none; }
 
 @font-face {
-  font-family: "Roboto";
-  font-weight: 700;
+  font-family: "bahaus";
+  font-weight: bold;
   font-style: normal;
-  src: url(../fonts/Robotobold.woff2) format("woff2"), url(../fonts/Robotobold.woff) format("woff"); }
+  src: url("../fonts/bahaus.woff") format("woff"); }
 
 @font-face {
-  font-family: "Roboto";
-  font-weight: 400;
+  font-family: "bahaus";
+  font-weight: normal;
   font-style: normal;
-  src: url(../fonts/Roboto.woff2) format("woff2"), url(../fonts/Roboto.woff) format("woff"); }
+  src: url("../fonts/bahaus-regular.woff") format("woff"); }
 
 @font-face {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
-  src: url(../fonts/fontello.woff2) format("woff2"); }
+  src: url("../fonts/fontello.woff2") format("woff2"); }
 
 img, video {
   max-width: 100%; }
@@ -427,7 +427,7 @@ a:hover {
   opacity: 0.7; }
 
 body {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "bahaus", "Arial", sans-serif;
   background-color: #fffafa;
   font-size: 14px;
   line-height: 140%;
@@ -569,7 +569,15 @@ a {
   content: '\e81d'; }
 
 .main-header {
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
+  .main-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45); }
   .main-header__title {
     z-index: 1;
     position: relative;
@@ -593,6 +601,9 @@ a {
     display: inline-block;
     opacity: 1;
     animation: 800ms ease 0s normal none infinite running caret; }
+
+.top {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 .head-top {
   display: -ms-flexbox;
@@ -830,7 +841,9 @@ a {
   .tarifi-text {
     text-align: center;
     font-size: 20px;
-    font-style: italic; }
+    font-style: italic;
+    z-index: 10;
+    position: relative; }
 
 .tarif {
   display: -ms-flexbox;
