@@ -15,7 +15,11 @@ body {
   font-size: 15px;
   line-height: 140%;
   color: #232323;
+<<<<<<< HEAD
   background-color: #fdfdfd; }
+=======
+  background-color: #eeeeee; }
+>>>>>>> master
 
 img {
   max-width: 100%; }
@@ -26,15 +30,46 @@ a {
   a:hover {
     text-decoration: none;
     color: #979797; }
+<<<<<<< HEAD
 
 .main-header {
   background-image: linear-gradient(to top, #fdfdfd, #058541);
   background-size: cover;
   background-repeat: no-repeat;
+=======
+
+.main-header {
+  background-image: url(/img/background-main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative; }
   .main-header::after {
-    content: "";
     position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background-image: url(/img/header-wave.png); }
+
+.navbar-nav .nav-link {
+  color: #ed1c24;
+  font-size: 120%;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .navbar-nav .nav-link:hover {
+    color: #c61017; }
+
+.main-header__adress {
+  color: #fdfdfd;
+  font-size: 1rem;
+  padding: 0 5px 0 45px;
+>>>>>>> master
+  position: relative; }
+  .main-header__adress::after {
+    content: '';
+    position: absolute;
+<<<<<<< HEAD
     border-top: 25px solid #fdfdfd;
     border-right: 25px solid transparent;
     border-left: 25px solid transparent;
@@ -60,11 +95,14 @@ a {
   .main-header__adress::after {
     content: '';
     position: absolute;
+=======
+>>>>>>> master
     display: block;
     width: 50px;
     height: 50px;
     background-image: url(/img/address-card.svg);
     top: 4px;
+<<<<<<< HEAD
     left: 0; }
 
 .main-header__phone {
@@ -205,3 +243,60 @@ a {
 
   .med-service__title {
     font-size: 1.5rem; } }
+=======
+    left: -20px; }
+
+.widget-med-service {
+  background-image: url(/img/background-main.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.med-service {
+  text-align: center;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px 1px #232323;
+  background-color: #eeeeee; }
+  .med-service__title {
+    font-size: 1.5rem; }
+  .med-service__img {
+    border-radius: 50%; }
+
+.clinica-slide1 {
+  background-image: url(/img/clinica-slide1.jpg); }
+
+.clinica-slide2 {
+  background-image: url(/img/clinica-slide2.jpg); }
+
+.clinica-slide3 {
+  background-image: url(/img/clinica-slide3.jpg); }
+
+.clinica-slide4 {
+  background-image: url(/img/clinica-slide4.jpg); }
+
+.clinica-slide5 {
+  background-image: url(/img/clinica-slide5.jpg); }
+
+.clinica-slide6 {
+  background-image: url(/img/clinica-slide6.jpg); }
+
+.slider-clinica .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.slider-clinica .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.features {
+  background-image: url(/img/bgfeatures.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+@media (min-width: 768px) {
+
+  .navbar-nav {
+    width: 100%; } }
+>>>>>>> master
