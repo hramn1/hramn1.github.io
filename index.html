@@ -1,229 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/swiper.min.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <title>Медицина плюс</title>
+  <title>Document</title>
 </head>
 <body>
-<header class="main-header py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-5 text-center">
-        <img src="img/logo.png" alt="Логотип" width="100" height="100" class="main-header__logo">
+<div class="container-arenda">
+    <form action="" method="post" class="zakaz-forma">
+      <div class="goods-items">
+        <label for="zakaz-forma__phone">Телефон:</label>
+        <input type="tel" name="zakaz-forma__phone" id="zakaz-forma__phone" required>
+        <label for="zakaz-forma__mail">Email:</label>
+        <input type="email" name="zakaz-forma__mail" id="zakaz-forma__mail">
+        <label for="zakaz-forma__name">Имя:</label>
+        <input type="text" name="zakaz-forma__name" id="zakaz-forma__name">
+        <button>Заказать</button>
       </div>
-      <div class="col-md-5 col-7 align-self-center">
-        <div class="main-header__adress">
-          <p>м. Пролетарская (2 мин. пешком) </p>
-          <p>г. Москва, Волгоградский проспект, д. 4А  </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="main-header__phone">
-          <p>+799999999</p>
-          <p>+899999999</p>
-          <p>Режим работы:Пн-Сб, 9:00-20:00 </p>
-        </div>
-      </div>
+    </form>
+
+    <div class="shatri-panel">
+      <button type="button" class="shatri-item" id="pag">Аренда Шатров Пагода</button>
+      <button type="button" class="shatri-item" id="sfera">Аренда Сферических шатров</button>
+      <button type="button" class="shatri-item" id="mob">Аренда Мобильных шатров</button>
+      <button type="button" class="shatri-item" id="arc">Аренда Арочных шатров</button>
+      <button type="button" class="shatri-item" id="zvezda">Аренда Шатров Звезда</button>
+      <button type="button" class="shatri-item" id="pauk">Аренда Шатров Паук</button>
+      <button type="button" class="shatri-item" id="tent">Аренда тентов</button>
     </div>
-    <div class="header-slider my-3">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/header-slide1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="img/header-slide1.jpg" alt=""></div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
+  <div class="choose-shater">
+  </div>
+  <div class="choose-goods">
+    <h2 class="title-goods"></h2>
+    <label for="arenda-range" class="choose-goods__label">Количествово дней аренды</label>
+    <input max="30" min="1" name="dayArenda" value="1" id="arenda-range" class="choose-goods__range" type="range">
+    <p name="resultDay" id="resultDay">1</p>
+    <label for="arenda-range-kolvo" class="choose-goods__kolvo">Количество</label>
+    <input max="100" min="1" name="dayArenda-kolvo" value="1" id="arenda-range-kolvo" class="choose-goods__range-kolvo" type="range">
+    <p name="resultDayKolvo" id="result-kolvo">1</p>
+    <label class="choose-goods__square-tent" for="square-tent">Площадь тента:</label>
+    <input type="number" min="36" max="9999" id="square-tent">
+    <div class="choose-goods__input-dop">
+      <input name="light" id="lightCheck" type="checkbox"><label for="lightCheck">Освещение</label>
+      <input name="door1" id="door1Check" type="checkbox"><label for="door1Check">Одностворчатая дверь</label>
+      <input name="floor" id="floorCheck" type="checkbox"><label for="floorCheck">Пол (брус, ламинированная фанера) </label>
+      <input name="carpet" id="carpetCheck" type="checkbox"><label for="carpetCheck">Ковролин </label>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-content-around">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-</header>
-<main class="main pb-4">
-  <section class="widget-med-service py-4">
-  <div class="container">
-  <div class="row">
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
-    <div class="col-md-3 col-6 my-2">
-      <div class="med-service">
-        <h2 class="med-service__title">Восстановление девственности</h2>
-        <img src="img/gimenoplastika.jpeg" class="med-service__img" alt="Восстановление девственности">
-        <a href="#" class="btn btn-success mt-3">Подробнее</a>
-      </div>
-    </div>
+      <button type="button" id="choose-btn" class="choose-goods__btn">Выбрать</button>
   </div>
 </div>
-  </section>
-  <section class="features py-4">
-    <div class="container">
-      <h2 class="features__title">Преимущества клиники</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="features-block">
-            <h3 class="features-block__title">Квалифицированные врачи</h3>
-            <p class="features-block__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-              Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block">
-            <h3 class="features-block__title">Квалифицированные врачи</h3>
-            <p class="features-block__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-              Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block">
-            <h3 class="features-block__title">Квалифицированные врачи</h3>
-            <p class="features-block__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-              Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="features-block">
-            <h3 class="features-block__title">Квалифицированные врачи</h3>
-            <p class="features-block__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-              Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <article class="about">
-    <div class="container">
-    <h1 class="about__title">Гинекология в клинике медицина плюс</h1>
-    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Praesent mauris sapien, vehicula in vulputate vitae, tempor at neque. Ut consectetur elementum lectus a rhoncus.
-    Nulla et ornare lorem. Nulla tristique ipsum sed justo convallis, a venenatis elit hendrerit.
-    Aliquam libero ipsum, accumsan scelerisque consequat at, vulputate non urna.
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    Donec dignissim varius dui consectetur tempus. Duis sit amet elit viverra, imperdiet lorem pretium, egestas libero.
-    Donec enim diam, faucibus sed tincidunt a, suscipit ac risus.
-    Integer vitae neque sed tellus consequat eleifend eget pharetra risus. Quisque non dolor dolor.
-    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam aliquam leo in orci volutpat laoreet.
-    </p>
-    </div>
-  </article>
-
-  <section class="slider-clinica">
-    <div class="container">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide clinica-slide1"></div>
-          <div class="swiper-slide clinica-slide2"></div>
-          <div class="swiper-slide clinica-slide3"></div>
-          <div class="swiper-slide clinica-slide4"></div>
-          <div class="swiper-slide clinica-slide5"></div>
-          <div class="swiper-slide clinica-slide6"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
-    </div>
-
-  </section>
-  <section class="doctor">
-    <div class="container">
-
-    </div>
-
-  </section>
-  <secton class="testimonials">
-
-  </secton>
-  <footer class="main-footer">
-
-  </footer>
-</main>
-<script src="js/swiper.min.js"></script>
-<script src="js/script.js"></script>
+<div class="modal-overlay"></div>
+<template>
+  <div class="goods-zakaz">
+    <h2></h2>
+    <img src="" alt="товар">
+    <p>Количество дней аренды <span class="goods-zakaz__arenda-day"></span></p>
+    <p>Количество <span class="goods-zakaz__kolvo"></span></p>
+    <p class="goods-zakaz__square-tent">Площадь тента: <span></span> м<sup>2</sup></p>
+    <h4 >Дополнительные опции</h4>
+    <span class="goods-zakaz__dop"></span>
+    <button type="text" class="goods-zakaz__remove"></button>
+  </div>
+</template>
+<script src="js/forma-zakaza.js"></script>
 </body>
 </html>
