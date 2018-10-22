@@ -183,10 +183,6 @@ img {
   .main-banner__title {
     font-size: 28px; }
 
-  .office-img a {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%; }
-
   .office-img {
     -ms-flex-pack: center;
     justify-content: center; } }
