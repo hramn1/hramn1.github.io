@@ -43,6 +43,10 @@ img {
 .swiper-slide {
   background-position: center;
   background-size: cover; }
+  .swiper-slide--1 {
+    background-image: url(../img/slide_one.jpg); }
+  .swiper-slide--2 {
+    background-image: url(../img/slide_two.jpg); }
 
 .head-logo {
   width: 230px; }
