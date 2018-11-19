@@ -492,11 +492,13 @@ template {
     padding: 5px 0; }
     .main-menu__search input {
       border: 1px solid #232323;
-      height: 20px;
+      height: 22px;
+      width: 260px;
       background-image: url(../img/search.svg);
       background-repeat: no-repeat;
-      background-position: 200px 3px;
-      background-size: 8%; }
+      background-position: 5px 4px;
+      background-size: 6%;
+      padding-left: 30px; }
 
 .main-menu-items {
   padding: 0;
@@ -624,7 +626,9 @@ template {
     color: #fdfdfd;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 4px 10px; }
+    padding: 4px 10px;
+    height: 22px;
+    margin-left: -1px; }
 
 .our-advantage {
   display: -ms-flex;
@@ -632,7 +636,119 @@ template {
   display: -ms-flexbox;
   display: flex;
   border-top: 1px solid #232323;
-  border-bottom: 1px solid #232323; }
+  border-bottom: 1px solid #232323;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 35px; }
   .our-advantage__item {
     -ms-flex-preferred-size: 20%;
-        flex-basis: 20%; }
+        flex-basis: 20%;
+    text-align: center; }
+
+.subscribe {
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+  padding: 35px 0 30px;
+  text-align: center; }
+
+.subscribe-form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 45px;
+  width: 300px; }
+
+.container--footer {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-footer {
+  padding: 15px 0 20px;
+  color: #fafafa; }
+
+.footer-menu {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 60px 0 20px; }
+  .footer-menu__link {
+    padding: 10px; }
+
+.payment-method {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  .payment-method__link {
+    width: 50px;
+    display: inline-block; }
+
+.favorites-slider {
+  padding: 45px 0 35px; }
+  .favorites-slider__title {
+    margin: 20px 0 30px;
+    position: relative;
+    text-align: center; }
+    .favorites-slider__title span {
+      padding-right: 20px;
+      position: relative;
+      background-color: #fdfdfd; }
+
+.our-online-store {
+  padding: 30px 0; }
+
+.brand-catalog {
+  padding: 30px 0 25px; }
+
+.main--catalog {
+  padding: 20px 30px; }
+
+.catalog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .catalog-wrapper__title {
+    border-bottom: 2px solid #232323;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 10px 0;
+    text-transform: capitalize; }
+
+.left-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+  .left-sidebar__link {
+    margin-right: auto;
+    width: 100%; }
+
+.catalog-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.catalog-goods {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
