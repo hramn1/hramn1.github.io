@@ -40,7 +40,7 @@ a {
     height: 40px;
     bottom: 20px;
     left: 50%;
-    margin-left: -41px;
+    margin-left: -11px;
     animation-name: down-arrow;
     animation-duration: 1600ms;
     animation-iteration-count: infinite; }
@@ -50,8 +50,12 @@ a {
   height: 100%;
   left: 0;
   right: 0;
-  background-image: url(../img/bg2.jpg);
+  background-image: url(../img/bg-head.jpg);
   background-size: cover; }
+
+.navbar-brand {
+  padding-top: 7px;
+  padding-left: 10px; }
 
 .canvas-header {
   position: absolute;
@@ -64,6 +68,7 @@ a {
 .head-promo {
   position: relative;
   margin-top: 10%;
+  padding-bottom: 10px;
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -76,6 +81,10 @@ a {
   .head-promo__text {
     margin: 10px 0;
     font-size: 17px; }
+
+.nav-link {
+  text-transform: capitalize;
+  font-size: 16px; }
 
 @keyframes down-arrow {
   0% {
@@ -97,7 +106,8 @@ a {
 .price-item {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
-  background-color: #4c6381; }
+  background-color: #4c6381;
+  height: 100%; }
   .price-item__title {
     margin-top: 0;
     margin-bottom: 0;
@@ -116,7 +126,7 @@ a {
     color: #fdfdfd;
     padding: 18px 12px; }
   .price-item__list {
-    padding: 20px 5px 15px 30px;
+    padding: 20px 5px 35px 30px;
     font-size: 14px;
     text-align: left;
     font-style: italic;
@@ -152,12 +162,32 @@ a {
       position: relative;
       display: block;
       content: "";
-      width: 60px;
-      height: 50px;
+      width: 80px;
+      height: 80px;
       border-radius: 5px;
-      margin: 10px auto;
+      margin: 10px auto 20px;
       background-size: cover;
-      background-image: url(../img/mobilePR-icon.png); }
+      background-image: url(../img/sozdanie-site.png); }
+
+.service-site__title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+.service-mobile::before {
+  background-image: url(../img/mobile-prilog.jpg); }
+
+.service-disain::before {
+  background-image: url(../img/design_icon.png); }
+
+.service-mobile-prol::before {
+  background-image: url(../img/mobile-prilog.jpg); }
+
+.service-seo::before {
+  background-image: url(../img/seo-icon.png); }
+
+.service-reklama::before {
+  background-image: url(../img/Social_Marketing-icon.png); }
 
 .our-portfolio {
   min-height: 100vh;
@@ -171,6 +201,51 @@ a {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr); }
+  .portfolio-site__item {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; }
+    .portfolio-site__item::before {
+      content: attr(data-title);
+      height: 40%;
+      padding: 30px;
+      font-size: 100%;
+      font-weight: bold;
+      color: #ffffff;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      text-align: center;
+      background: #333333;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-80px); }
+    .portfolio-site__item::after {
+      position: absolute;
+      content: attr(data-description);
+      top: 40%;
+      height: 60%;
+      padding: 0 20px;
+      color: #d7bb97;
+      z-index: -1;
+      width: 100%;
+      text-align: center;
+      background: #333333;
+      box-sizing: border-box;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-80px); }
+    .portfolio-site__item:hover::after {
+      transform: translateX(0); }
+    .portfolio-site__item:hover::before {
+      transform: translateX(0); }
+    .portfolio-site__item img {
+      display: block;
+      width: 100%;
+      transition: transform 0.3s ease;
+      height: 100%; }
+    .portfolio-site__item:hover img {
+      transform: translateX(100%); }
 
 .testimonials {
   min-height: 50vh;
